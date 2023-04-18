@@ -1,9 +1,7 @@
-const axios = require('axios');
-const fs = require('fs');
 const voicevox = require('./voicevox_client.js');
 
-
 const engine = new voicevox.voicevox_engine('127.0.0.1', 50021);
+
 testinput = "おめでとうございます！うまくいったのですね、素晴らしいです！"
 //some examples:
 //猫使ビィ = 58
@@ -18,6 +16,8 @@ voices.forEach(speaker => {
         engine.synthesize('./',`${speaker}`,response, speaker)
     });
 });
+
+//available methods:
 
 /*
 engine.audioQueryfromPreset(testinput, 1).then(function (response) {
