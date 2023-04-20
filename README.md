@@ -1,6 +1,11 @@
 # voicevox-client.js
 Simple nodejs client for https://github.com/VOICEVOX/voicevox
 
+- install via npm
+```
+npm install https://github.com/Shiro-Nek0/voicevox-client.js
+```
+
 Example usage:
 ``` js
     const voicevox = require('voicevox_client_js');
